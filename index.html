@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<title>Microprocessor</title>
+	<!--<style type="text/css">
+            #MyList li ol li{display:none;}
+            #MyList li:hover ol li{display:block;}
+            #MyUl li:hover ul li ul li{display:none;}
+            #MyUl li ul li:hover ul li{display:block;}
+        </style> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<!--jQuery library-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<!-- Popper JS -->
+			 <style type="text/css">
+				ul li ol{
+				 display:none;
+				}
+			 </style>
+		<script type="text/javascript">
+			$(document).ready(function ()
+			{
+			$("ul li").click(function(){
+				$(this).find("ol").toggle();
+			});	
+		});
+		
+		$(document).ready(function ()
+			{
+			$("ul li").click(function(){
+				$(this).find("ul").toggle();
+			});	
+		});
+ </script>
+	</head>
+	<body bgcolor="#3b64a5" >
+	<h1 color="white">Microprocessor</h1><hr />
+	<ul id="MyList" >
+			<img class="img-responsive" src="MI/Intel_P8085AH.jpg" height="500px" width="600px"/>
+				<li>Bit</li>
+				<li>nibble</li>
+				<li>byte</li>
+				<li>word(16 bit number)</li>
+				<li>Double word(32 bit binary number)</li>
+				<li>Multiple word(64,128... bit binary number)</li>
+				<li>word(16 bit number)</li>
+				<li>Data</li>
+				<li>Address(8085/86 use 16/20 bit)</li>
+				
+				<li>Bus
+					<ol>
+						<li>CPU Bus</li>
+						<li>System Bus</li>
+					</ol>
+				</li>
+				<li>Pin Diagram
+					<ol>
+						<li>
+							<img class="img-responsive" src="MI/pindiag.png"/>
+						</li>
+					</ol>
+				</li>
+				<li>Architecture
+					<ol>
+						<li>
+							<img class="img-responsive" src="MI/archi.jpeg"/>
+						</li>
+					</ol>
+				</li>
+				
+				<li>Programmable Peripheral interface (PPI)-- is a multiport device connceted to microprocessor
+					<ol>
+						<li>
+							<img class="img-responsive" src="MI/peripheral-devices-architecture-of-intel-8255.png"/>
+						</li>
+						<li>Port A(8 bit)</li>
+						<li>Port B(8 bit)</li>
+						<li>Port C(upper 4 bit,lower 4 bit)</li>
+						<li>Operting Modes
+							<ol>
+								<li>Mode 0-Simple i/p o/p port (two 8 bit A,B two 4bit C<sub>Upper</sub>,C<sub>Lower</sub> each operated either as i/p or o/p)</li>
+								<li>Mode 1-Handshaking Port (Port A and Port B designed to used as <-- when used <--Port C (six pins)) works for their control)</li>
+								<li>Mode 2-Bidirectional Port(Port A(only) use as Bidirectional when port A programmed as <-- port B used either Mode 1 or Mode 0.)</li>
+							</ol>
+						</li>
+					</ol>
+				</li>				
+		</ul>
+	<center><a href="#"> Back</a></center>
+	</body>
+</html>
