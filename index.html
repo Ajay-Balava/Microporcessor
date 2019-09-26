@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 	<head>
-	<title>Angular</title>
+	<title>Microprocessor</title>
 	<!--<style type="text/css">
             #MyList li ol li{display:none;}
             #MyList li:hover ol li{display:block;}
@@ -35,16 +35,94 @@
  </script>
 	</head>
 	<body bgcolor="#3b64a5" >
-	<h1 color="white">Angular</h1><hr />
+	<h1 color="white">Microprocessor</h1><hr />
 	<ul id="MyList" >
-	
-	<img class="img-responsive" src="angular/angular.png" height="500px" width="600px"/>
-		<li>.ts file typeScript</li>
-		<li>* is a structure directive</li>
-		<li>Angular is a JavaScript framework which makes you able to create reactive Single Page Applications (SPAs).</li>
-		<li>Angular's versions beyond 2+ are generally known as Angular only. The very first version Angular 1.0 is known as AngularJS.</li>
-		<li>Angular uses the different expression syntax. It uses "[ ]" for property binding, and "( )" for event binding.</li>
-	</ul>
-	<center><a href="index.html">Back</a></center>
+			<img class="img-responsive" src="MI/Intel_P8085AH.jpg" height="500px" width="600px"/>
+				<li>Bit</li>
+				<li>nibble</li>
+				<li>byte</li>
+				<li>word(16 bit number)</li>
+				<li>Double word(32 bit binary number)</li>
+				<li>Multiple word(64,128... bit binary number)</li>
+				<li>word(16 bit number)</li>
+				<li>Data</li>
+				<li>Address(8085/86 use 16/20 bit)</li>
+				
+				<li>Bus
+					<ol>
+						<li>CPU Bus</li>
+						<li>System Bus</li>
+					</ol>
+				</li>
+				<li>Pin Diagram
+					<ol>
+						<li>
+							<img class="img-responsive" src="MI/pindiag.png"/>
+						</li>
+					</ol>
+				</li>
+				<li>Architecture
+					<ol>
+						<li>
+							<img class="img-responsive" src="MI/archi.jpeg"/>
+						</li>
+					</ol>
+				</li>
+				
+				<li>Programmable Peripheral interface (PPI)-- is a multiport device connceted to microprocessor
+					<ol>
+						<li>
+							<img class="img-responsive" src="MI/peripheral-devices-architecture-of-intel-8255.png"/>
+						</li>
+						<li>Port A(8 bit)</li>
+						<li>Port B(8 bit)</li>
+						<li>Port C(upper 4 bit,lower 4 bit)</li>
+						<li>Operting Modes
+							<ol>
+								<li>Mode 0-Simple i/p o/p port (two 8 bit A,B two 4bit C<sub>Upper</sub>,C<sub>Lower</sub> each operated either as i/p or o/p)</li>
+								<li>Mode 1-Handshaking Port (Port A and Port B designed to used as <-- when used <--Port C (six pins)) works for their control)</li>
+								<li>Mode 2-Bidirectional Port(Port A(only) use as Bidirectional when port A programmed as <-- port B used either Mode 1 or Mode 0.)</li>
+							</ol>
+						</li>
+					</ol>
+				</li>	
+
+				<li>Programmable Interrupt Controller (PIC) 5 h/w ans 2 h/w 8085 and 8086 respectively -connecting 8259 with CPU, Increase^ interrupt handling capability.
+					<ol>
+						<li>Block Diagram of 8259
+							<img class="img-responsive" src="MI/blockDiagram.jpg"/>
+						</li>
+						<li>Pin Diagram of 8259
+							<img class="img-responsive" src="MI/pin-pic.png"/>
+						</li>
+						<li>Functional Block Diagram of 8259
+							<ul>
+								<li>Control logic </li>
+									<li>Read Write logic </li>
+									<li>Data bus buffer </li>
+									<li>Interrupt Request Register (IRR) </li>
+									<li>In-Service Register (ISR) </li>
+									<li>Interrupt Mask Register (IMR) </li>
+									<li>Priority Resolver (PR) </li>
+									<li>Cascade buffer.(Expand interrupts of 8259 CAS0 CAS 1 CAS2 from master are cannected to the correspoindind pin of slave )</li>
+							</ul>
+							<img class="img-responsive" src="MI/pic.jpg"/>
+						</li>
+						<li>Priority mode of Interrupt request 8259
+							<ul>
+									<li>Fully Nested Mode</li>
+									<li>Special Fully Nested Mode (SFNM)</li>
+									<li>Rotating Priority Mode,</li>
+									<li>Special Masked Mode, and</li>
+									<li>Polled Mode.</li>
+							</ul>
+						</li>
+						<li>Intializing 8259
+							<img class="img-responsive" src="MI/intializing8259.jpg"/>
+						</li>
+					</ol>
+				</li>
+		</ul>
+	<center><a href="#"> Back</a></center>
 	</body>
 </html>
